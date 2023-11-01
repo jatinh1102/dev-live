@@ -1,0 +1,159 @@
+
+  <section class="hero-bg" style="background-image: url('../assets/img/white_banner_bg.png');">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-lg-8 col-md-12">
+          <h1 class="banner-heading">About Us</h1>
+          <p class="banner-text">"Your Journey Starts with Our History."</p>
+        </div>
+        <div class="col-lg-4">
+          <img src="../assets/img/Banner-img/About-Banner.png" alt="banner" class="banner-1">
+        </div>
+      </div>
+    </div>
+  </section>
+  <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb" class="container">
+    <ol class="breadcrumb">
+      <li class="breadcrumb-item"><a routerLink="/home" routerLinkActive="active">Home</a></li>
+      <li class="breadcrumb-item active" aria-current="page">About Us</li>
+    </ol>
+  </nav>
+  <div class="container about-page">
+    <div class="row align-items-center">
+      <div class="col-md-6">
+        <div class="row">
+          <div class="col-md-6 mt-5">
+            <div class="card about-card text-center mb-4">
+              <div>
+                <img src="../assets/img/clock.png" class="card-img-top" alt="Fastest">
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">Fastest</h5>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 mb-5">
+            <div class="card about-card text-center">
+              <div>
+                <img src="../assets/img/Efficient.png" class="card-img-top" alt="Efficient">
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">Efficient</h5>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 mb-5">
+            <div class="card about-card text-center mb-4">
+              <div>
+                <img src="../assets/img/Reliable.png" class="card-img-top" alt="Reliable">
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">Reliable</h5>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="card about-card text-center mb-4" style="margin-top: -45px;">
+              <div>
+                <img src="../assets/img/Strategy.png" class="card-img-top" alt="Strategy">
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">Strategy</h5>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <h1>Level up your Business
+          with Our Company</h1>
+        <p>Level up your business with Our Company. We are a leading provider of innovative solutions that drive growth and success. With our expertise in IT Industry, we help businesses optimize their operations, enhance customer experiences, and achieve their strategic goals. Partner with us and unlock your business's full potential.</p>
+        <p>But it's not just about the solutions we provide. At Our Company, we pride ourselves on building strong partnerships with our clients. We believe in fostering long-term relationships based on trust, transparency, and collaboration. When you partner with us, you can expect a dedicated team that is committed to your success and will go the extra mile to ensure</p>
+        <a class="btn-link-dark" (click)="Enquirymodal()">Get A Quote</a>
+      </div>
+      <div class="col-md-6 mt-5 mb-5">
+        <h1>Mission to Change Your Business</h1>
+        <p>At DevTroop, we're not just another IT service provider; we're your strategic partner in the journey of transforming your business. Our mission is simple yet powerful: we're here to change your business for the better.</p>
+        <ul>
+          <li><b>Innovation:</b> We're driven by the latest tech to keep you ahead.</li>
+          <li><b>Empowerment:</b> We equip your business for today and tomorrow.</li>
+          <li><b>Simplicity:</b> We make tech easy, so you can focus on your core goals.</li>
+        </ul>
+        <p>Join us in this journey to unlock the potential of technology for your business. Contact us today to get started. </p>
+        <a href="#" class="btn-link-dark" data-bs-toggle="modal" data-bs-target="#exampleModal">Explore With Us</a>
+      </div>
+      <div class="col-md-6 mt-5 mb-5">
+        <img src="../assets/img/Banner-img/about-content.png" width="100%" height="571">
+      </div>
+    </div>
+  </div>
+
+  <div class="container mb-5 about-us-membor-card">
+    <div class="row">
+      <div class="col-md-12">
+        <h1 class="heading">Members of DevTroop</h1>
+        <div class="d-flex align-items-center justify-content-center mb-2">
+          <hr><span class="iconify me-4 ms-4 square" data-icon="ic:outline-square" data-width="20" data-height="20"
+            data-rotate="48deg"></span>
+          <hr>
+        </div>
+      </div>
+      <div class="col-md-3" *ngFor="let items of members_data | slice:0:4">
+        <a routerLink="/members" routerLinkActive="active" class="card text-center mb-4 border-0">
+          <div>
+            <img src={{items.img}} class="card-img-top" alt="avtar">
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">{{items.name}}</h5>
+            <p class="card-text">{{items.position}}</p>
+          </div>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6">
+        <h1 class="heading">Our Latest Blog</h1>
+        <div class="d-flex align-items-center justify-content-center mb-2">
+          <hr><span class="iconify me-4 ms-4 square" data-icon="ic:outline-square" data-width="20" data-height="20"
+            data-rotate="48deg"></span>
+          <hr>
+        </div>
+        <h4 class="subheading">Our blogs offer valuable insights and information on software
+          and technology development to help our readers stay ahead of the curve.</h4>
+      </div>
+      <div class="col-md-6  d-flex align-items-center justify-content-end mt-4">
+        <a routerLink="/blog" routerLinkActive="active" type="button" class="btn btn-header">See all Blog
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+            class="bi bi-chevron-right ms-2" viewBox="0 0 16 16">
+            <path fill-rule="evenodd"
+              d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z" />
+          </svg></a>
+      </div>
+    </div>
+  </div>
+  <section class="Our-Latest-Blog mt-4">
+    <div class="container">
+      <div class="row">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-4 col-md-6 mb-4" *ngFor="let items of blog_data | slice:0:3">
+              <div class="card">
+                <img src="{{items.img}}" class="card-img-top" alt="Blog">
+                <div class="card-body">
+                  <div class="d-flex align-items-center justify-content-between mb-2">
+                    <span>{{items.title}}</span>
+                    <span>{{items.date}}</span>
+                  </div>
+                  <h5 class="card-title">{{items.card_title}}</h5>
+                  <p class="card-text">{{items.content}}</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>

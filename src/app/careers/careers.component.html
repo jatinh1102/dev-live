@@ -1,0 +1,248 @@
+<section class="hero-bg" style="background-image: url('../assets/img/white_banner_bg.png');">
+  <div class="container">
+    <div class="row align-items-center">
+      <div class="col-lg-6 col-md-12">
+        <h1 class="banner-heading">Careers</h1>
+        <p class="banner-text">Explore Your Future with Us: Join Our Team and Shape Your Career!</p>
+      </div>
+      <div class="col-lg-6 col-md-12">
+        <img src="../assets/img/Banner-img/Careers-Banner.png" width="100%" alt="banner" class="banner-1">
+      </div>
+    </div>
+  </div>
+</section>
+<nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb" class="container">
+  <ol class="breadcrumb">
+    <li class="breadcrumb-item"><a routerLink="/home" routerLinkActive="active">Home</a></li>
+    <li class="breadcrumb-item active" aria-current="page">Careers</li>
+  </ol>
+</nav>
+<section class="career-section">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-3">
+        <a class="btn responsive-d-none mb-4" (click)="open(content)">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-list"
+            viewBox="0 0 16 16">
+            <path fill-rule="evenodd"
+              d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z" />
+          </svg>
+        </a>
+        <div class="hide-section" id="accordionPanelsStayOpenExample" ngbAccordion>
+          <div ngbAccordionItem [collapsed]="false" class="mb-3">
+            <h2 id="panelsStayOpen-headingOne" ngbAccordionHeader>
+              <button class="accordion-button" type="button" ngbAccordionButton>
+                Location
+              </button>
+            </h2>
+            <div id="panelsStayOpen-collapseOne" ngbAccordionCollapse>
+              <ul class="designers" style="list-style: none;" ngbAccordionBody>
+                <li class="subcat"><input type="checkbox" id="rajkot"><label for="sup">Rajkot</label><span
+                    class="count">123K</span>
+                </li>
+                <li class="subcat"><input type="checkbox" id="Ahemdabad"><label for="bape">Ahemdabad</label><span
+                    class="count">97K</span>
+                </li>
+                <li class="subcat"><input type="checkbox" id="Surat"><label for="gucci">Surat</label><span
+                    class="count">93K</span>
+                </li>
+                <li class="subcat"><input type="checkbox" id="Gandhinagar"><label for="bal">Gandhinagar</label><span
+                    class="count">31K</span>
+                </li>
+                <li class="subcat"><input type="checkbox" id="Mumbai"><label for="prada">Mumbai</label><span
+                    class="count">23K</span></li>
+                <li class="subcat"><input type="checkbox" id="Delhi"><label for="formal">Delhi</label><span
+                    class="count">18K</span></li>
+              </ul>
+            </div>
+          </div>
+          <div ngbAccordionItem [collapsed]="false" class="mb-3">
+            <h2 id="panelsStayOpen-headingTwo" ngbAccordionHeader>
+              <button class="accordion-button" type="button" ngbAccordionButton>
+                Time
+              </button>
+            </h2>
+            <div id="panelsStayOpen-collapseTwo" ngbAccordionCollapse>
+              <ul class="designers" style="list-style: none;" ngbAccordionBody>
+                <li class="subcat"><input type="checkbox" id="PartTime"><label for="PartTime">Part Time</label><span
+                    class="count">97K</span>
+                </li>
+                <li class="subcat"><input type="checkbox" id="FullTime"><label for="FullTime">Full Time</label><span
+                    class="count">93K</span>
+                </li>
+                <li class="subcat"><input type="checkbox" id="Remote"><label for="Remote">Remote</label><span
+                    class="count">31K</span>
+                </li>
+                <li class="subcat"><input type="checkbox" id="Hybride"><label for="Hybride">Hybride</label><span
+                    class="count">23K</span></li>
+              </ul>
+            </div>
+          </div>
+          <div ngbAccordionItem [collapsed]="false" class="mb-3">
+            <h2 id="panelsStayOpen-headingThree" ngbAccordionHeader>
+              <button class="accordion-button" type="button" ngbAccordionButton>
+                Exprience
+              </button>
+            </h2>
+            <div id="panelsStayOpen-collapseThree" ngbAccordionCollapse>
+              <ul class="designers" style="list-style: none;" ngbAccordionBody>
+                <li class="subcat"><input type="checkbox" id="-1"><label for="-1">-1</label><span
+                    class="count">20K</span>
+                </li>
+                <li class="subcat"><input type="checkbox" id="+1"><label for="+1">1+</label><span
+                    class="count">97K</span>
+                </li>
+                <li class="subcat"><input type="checkbox" id="+2"><label for="+2">2+</label><span
+                    class="count">93K</span>
+                </li>
+                <li class="subcat"><input type="checkbox" id="+3"><label for="+3">3+</label><span
+                    class="count">31K</span>
+                </li>
+                <li class="subcat"><input type="checkbox" id="+4"><label for="+4">4+</label><span
+                    class="count">23K</span></li>
+              </ul>
+            </div>
+          </div>
+          <div ngbAccordionItem [collapsed]="false">
+            <h2 id="panelsStayOpen-headingFour" ngbAccordionHeader>
+              <button class="accordion-button" type="button" ngbAccordionButton>
+                Positions
+              </button>
+            </h2>
+            <div id="panelsStayOpen-collapseFour" ngbAccordionCollapse>
+              <ul class="designers" style="list-style: none;" ngbAccordionBody>
+                <li class="subcat"><input type="checkbox" id="Design"><label for="Design">Design</label><span
+                    class="count">97K</span>
+                </li>
+                <li class="subcat"><input type="checkbox" id="Development"><label
+                    for="Development">Development</label><span class="count">93K</span>
+                </li>
+                <li class="subcat"><input type="checkbox" id="Testers"><label for="Testers">Testers</label><span
+                    class="count">31K</span>
+                </li>
+                <li class="subcat"><input type="checkbox" id="ProjectManager"><label for="ProjectManager">Project
+                    Manager</label><span class="count">23K</span></li>
+                <li class="subcat"><input type="checkbox" id="AppDevelopment"><label for="AppDevelopment">App
+                    Development</label><span class="count">23K</span></li>
+                <li class="subcat"><input type="checkbox" id="SoftwareDevelopment"><label
+                    for="SoftwareDevelopment">Software Development</label><span class="count">23K</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-12 col-lg-9">
+        <div class="tab-content" id="v-pills-tabContent">
+          <app-careers-info> </app-careers-info>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<ng-template #content let-offcanvas>
+  <div class="offcanvas-header">
+    <h5 class="offcanvas-title" id="offcanvasExampleLabel">Fillter</h5>
+    <button type="button" class="btn-close" (click)="offcanvas.dismiss()"></button>
+  </div>
+  <div class="offcanvas-body">
+    <div class="accordion " id="accordionPanelsStayOpenExample" ngbAccordion>
+      <div ngbAccordionItem [collapsed]="false" class="mb-3">
+        <h2 id="panelsStayOpen-headingOne" ngbAccordionHeader>
+          <button class="accordion-button" type="button" ngbAccordionButton>
+            Location
+          </button>
+        </h2>
+        <div id="panelsStayOpen-collapseOne" ngbAccordionCollapse>
+          <ul class="designers" style="list-style: none;" ngbAccordionBody>
+            <li class="subcat"><input type="checkbox" id="rajkot"><label for="sup">Rajkot</label><span
+                class="count">123K</span>
+            </li>
+            <li class="subcat"><input type="checkbox" id="Ahemdabad"><label for="bape">Ahemdabad</label><span
+                class="count">97K</span>
+            </li>
+            <li class="subcat"><input type="checkbox" id="Surat"><label for="gucci">Surat</label><span
+                class="count">93K</span>
+            </li>
+            <li class="subcat"><input type="checkbox" id="Gandhinagar"><label for="bal">Gandhinagar</label><span
+                class="count">31K</span>
+            </li>
+            <li class="subcat"><input type="checkbox" id="Mumbai"><label for="prada">Mumbai</label><span
+                class="count">23K</span></li>
+            <li class="subcat"><input type="checkbox" id="Delhi"><label for="formal">Delhi</label><span
+                class="count">18K</span></li>
+          </ul>
+        </div>
+      </div>
+      <div ngbAccordionItem [collapsed]="false" class="mb-3">
+        <h2 id="panelsStayOpen-headingTwo" ngbAccordionHeader>
+          <button class="accordion-button" type="button" ngbAccordionButton>
+            Time
+          </button>
+        </h2>
+        <div id="panelsStayOpen-collapseTwo" ngbAccordionCollapse>
+          <ul class="designers" style="list-style: none;" ngbAccordionBody>
+            <li class="subcat"><input type="checkbox" id="PartTime"><label for="PartTime">Part Time</label><span
+                class="count">97K</span>
+            </li>
+            <li class="subcat"><input type="checkbox" id="FullTime"><label for="FullTime">Full Time</label><span
+                class="count">93K</span>
+            </li>
+            <li class="subcat"><input type="checkbox" id="Remote"><label for="Remote">Remote</label><span
+                class="count">31K</span>
+            </li>
+            <li class="subcat"><input type="checkbox" id="Hybride"><label for="Hybride">Hybride</label><span
+                class="count">23K</span></li>
+          </ul>
+        </div>
+      </div>
+      <div ngbAccordionItem [collapsed]="false" class="mb-3">
+        <h2 id="panelsStayOpen-headingThree" ngbAccordionHeader>
+          <button class="accordion-button" type="button" ngbAccordionButton>
+            Exprience
+          </button>
+        </h2>
+        <div id="panelsStayOpen-collapseThree" ngbAccordionCollapse>
+          <ul class="designers" style="list-style: none;" ngbAccordionBody>
+            <li class="subcat"><input type="checkbox" id="-1"><label for="-1">-1</label><span class="count">20K</span>
+            </li>
+            <li class="subcat"><input type="checkbox" id="+1"><label for="+1">1+</label><span class="count">97K</span>
+            </li>
+            <li class="subcat"><input type="checkbox" id="+2"><label for="+2">2+</label><span class="count">93K</span>
+            </li>
+            <li class="subcat"><input type="checkbox" id="+3"><label for="+3">3+</label><span class="count">31K</span>
+            </li>
+            <li class="subcat"><input type="checkbox" id="+4"><label for="+4">4+</label><span class="count">23K</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div ngbAccordionItem [collapsed]="false">
+        <h2 id="panelsStayOpen-headingFour" ngbAccordionHeader>
+          <button class="accordion-button" type="button" ngbAccordionButton>
+            Positions
+          </button>
+        </h2>
+        <div id="panelsStayOpen-collapseFour" ngbAccordionCollapse>
+          <ul class="designers" style="list-style: none;" ngbAccordionBody>
+            <li class="subcat"><input type="checkbox" id="Design"><label for="Design">Design</label><span
+                class="count">97K</span>
+            </li>
+            <li class="subcat"><input type="checkbox" id="Development"><label for="Development">Development</label><span
+                class="count">93K</span>
+            </li>
+            <li class="subcat"><input type="checkbox" id="Testers"><label for="Testers">Testers</label><span
+                class="count">31K</span>
+            </li>
+            <li class="subcat"><input type="checkbox" id="ProjectManager"><label for="ProjectManager">Project
+                Manager</label><span class="count">23K</span></li>
+            <li class="subcat"><input type="checkbox" id="AppDevelopment"><label for="AppDevelopment">App
+                Development</label><span class="count">23K</span></li>
+            <li class="subcat"><input type="checkbox" id="SoftwareDevelopment"><label for="SoftwareDevelopment">Software
+                Development</label><span class="count">23K</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>

@@ -1,0 +1,294 @@
+
+
+  <section class="hero-bg" style="background-image: url('../assets/img/white_banner_bg.png');">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-lg-8 col-md-12">
+          <h1 class="banner-heading">Admin Dashboard</h1>
+          <p class="banner-text">Dive Deeper into Our Success Stories: Explore Case Studies</p>
+        </div>
+        <div class="col-lg-4 col-md-6 banner-image">
+          <img src="../assets/img/Banner-img/Case-Studies-Explore-Baneer.png" alt="banner" class="banner-1">
+        </div>
+      </div>
+    </div>
+  </section>
+  <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb" class="container">
+    <ol class="breadcrumb">
+      <li class="breadcrumb-item"><a routerLink="/home" routerLinkActive="active">Home</a></li>
+      <li class="breadcrumb-item"><a routerLink="/case-study" routerLinkActive="active">Case Studies</a></li>
+      <li class="breadcrumb-item active" aria-current="page">{{case_study_data.title}}</li>
+    </ol>
+  </nav>
+  <section class="Case-Studies-details">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <div class="mbp-mockup-wrapper">
+            <div class="mbp-container">
+              <div class="mbp-display with-glare">
+                <div class="display-edge">
+                  <div class="bezel">
+                    <div class="display-camera"></div>
+                    <div class="display-frame">
+                      <iframe src="index.html" allowfullscreen></iframe>
+                    </div>
+                    <div class="below-display">
+                      <div class="macbookpro"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="mbp-keyboard">
+                <div class="front">
+                  <div class="opener-left"></div>
+                  <div class="opener-right"></div>
+                </div>
+                <div class="bottom-left"></div>
+                <div class="bottom-right"></div>
+                <div class="mbp-shadow">
+                  <div class="shadow-left"></div>
+                  <div class="shadow-right"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <h1>{{case_study_data.title}}</h1>
+          <p>{{case_study_data.content}}</p>
+          <hr class="w-100">
+          <div class="d-flex align-items-center">
+            <span class="me-3">Time Duration :</span>
+            <b>2 Month</b>
+          </div>
+          <hr class="w-100">
+          <span class="d-block mb-2">Services :</span>
+          <span class="badge text-bg-primary mx-1">ECommerce Development</span>
+          <span class="badge text-bg-secondary mx-1">UI/UX Design</span>
+          <span class="badge text-bg-warning mx-1">Graphics & Web</span>
+          <span class="badge text-bg-success mx-1">Mobile App development</span>
+          <span class="badge text-bg-danger mx-1">Angular Developnent</span>
+          <span class="badge text-bg-info mx-1">Mongo DB</span>
+        </div>
+        <div class="d-grid gap-2 d-sm-flex justify-content-center mb-5 mt-4">
+          <button type="button" class="btn btn-secondary btn-lg px-4" (click)="Enquirymodal()">
+            Call to Action
+          </button>
+        </div>
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12">
+              <h1 class="heading">Team Organization</h1>
+              <div class="d-flex align-items-center justify-content-center mb-2">
+                <hr><span class="iconify me-4 ms-4 square" data-icon="ic:outline-square" data-width="20" data-height="20"
+                  data-rotate="48deg"></span>
+                <hr>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="card text-center mb-4 border-0">
+                <div>
+                  <img src="../assets/img/Fare-Management.png" class="card-img-top" alt="Fare-Management">
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title">Fare Management</h5>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="card text-center mb-4 border-0">
+                <div>
+                  <img src="../assets/img/Customer-Management.png" class="card-img-top" alt="Customer-Management">
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title">Customer Management</h5>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="card text-center mb-4 border-0">
+                <div>
+                  <img src="../assets/img/Real-time-Bus-Tracking.png" class="card-img-top" alt="Real-time-Bus-Tracking">
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title">Real-time Bus Tracking</h5>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="card text-center mb-4 border-0">
+                <div>
+                  <img src="../assets/img/Reporting.png" class="card-img-top" alt="Reporting">
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title">Reporting</h5>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-12">
+          <h3 class="list-heading">Customer Satisfaction</h3>
+          <ul>
+            <li>Our top priority at DevTroop IT Solutions is customer satisfaction. We believe that happy clients are the cornerstone of our success. </li>
+            <li>With a relentless commitment to quality, our IT experts go the extra mile to meet and exceed your expectations, ensuring that your IT needs are not just met but surpassed.
+            </li>
+          </ul>
+          <h3 class="list-heading">Challenge</h3>
+          <ul>
+            <li>We thrive on the challenge of solving complex IT problems and offer tailored solutions that propel your business forward. </li>
+            <li>Discover the transformative power of embracing challenges in the digital landscape, and let us be your trusted IT partner to overcome them together.
+            </li>
+          </ul>
+          <h3 class="list-heading">Our Engagement</h3>
+          <ul>
+            <li>We believe in fostering strong relationships, aligning our expertise with your unique needs, and delivering IT solutions that drive your business forward. </li>
+            <li>With a focus on transparency, communication, and proactive problem-solving, our engagement process is designed to be your competitive advantage in the ever-evolving IT landscape.
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row">
+          <!-- Research -->
+        <div class="col-md-12 mb-5 mt-5">
+          <div class="d-flex align-items-center">
+            <div class="round-image text-center bg-blue me-4"
+              style="background-image: url('../assets/img/white_banner_bg.png');">
+              <img src="../assets/img/research.png" class="" alt="Research">
+              <h4>Research</h4>
+            </div>
+            <div>
+              <h3 class="list-heading">Research</h3>
+              <ul>
+                <li>Begin by understanding your target audience and competitors, identifying key goals, and selecting the right technology and platform for your website.</li>
+                <li>Our dedicated team of researchers is committed to unraveling complex challenges and developing cutting-edge solutions that transform industries. </li>
+                <li>In an ever-evolving digital landscape, our passion for research drives us to find answers to the most pressing questions and create solutions that propel your business forward.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+          <!-- Planning -->
+        <div class="col-md-12 mb-5 mt-5">
+          <div class="d-flex align-items-center">
+            <div class="round-image text-center bg-sky-blue me-4">
+              <img src="../assets/img/research.png" class="" alt="Planning">
+              <h4>Planning</h4>
+            </div>
+            <div>
+              <h3 class="list-heading">Planning</h3>
+              <ul>
+                <li>Create a detailed project plan, including sitemaps, wireframes, and a content strategy, to outline the structure and functionality of your website.</li>
+                <li>Effective planning is the cornerstone of success in the dynamic world of IT, and at DevTroop IT Solutions, we excel in crafting strategic roadmaps for your technology initiatives.</li>
+                <li>With a focus on adaptability and innovation, our planning process is designed to be your guiding light in an ever-changing digital landscape.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+          <!-- Web Graphics -->
+        <div class="col-md-12 mb-5 mt-5">
+          <div class="d-flex align-items-center">
+            <div class="round-image text-center bg-green me-4">
+              <img src="../assets/img/research.png" class="" alt="Web Graphics">
+              <h4>Web Graphics</h4>
+            </div>
+            <div>
+              <h3 class="list-heading">Web Graphics</h3>
+              <ul>
+                <li>Design visually appealing elements like logos, images, and user interface components that align with your brand and enhance user experience.</li>
+                <li>Our talented designers embrace the challenge of translating your brand's essence into visually stunning web graphics that engage your audience.</li>
+                <li>We believe that innovative web graphics are the key to making a memorable first impression, and we're here to help your website shine. </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+          <!-- Content Writing -->
+        <div class="col-md-12 mb-5 mt-5">
+          <div class="d-flex align-items-center">
+            <div class="round-image text-center bg-yellow me-4">
+              <img src="../assets/img/research.png" class="" alt="Content-Writing">
+              <h4>Content Writing</h4>
+            </div>
+            <div>
+              <h3 class="list-heading">Content Writing</h3>
+              <ul>
+                <li>Craft engaging and informative content that resonates with your audience, while optimizing it for SEO to improve visibility on search engines.</li>
+                <li>We believe that quality content is the foundation of a successful online presence, and we're here to help you deliver your message with impact.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+          <!-- Development Process -->
+        <div class="col-md-12 mb-5 mt-5">
+          <div class="d-flex align-items-center">
+            <div class="round-image text-center bg-orange me-4">
+              <img src="../assets/img/research.png" class="" alt="Development-Process">
+              <h4>Development Process</h4>
+            </div>
+            <div>
+              <h3 class="list-heading">Development Process</h3>
+              <ul>
+                <li>Build your website using coding languages like HTML, CSS, and JavaScript, ensuring it's responsive, functional, and user-friendly. </li>
+                <li>The development process at DevTroop Web Solutions is where challenges meet innovation, shaping your website into a digital masterpiece.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+          <!-- Migration -->
+        <div class="col-md-12 mb-5 mt-5">
+          <div class="d-flex align-items-center">
+            <div class="round-image text-center bg-red me-4">
+              <img src="../assets/img/research.png" class="" alt="Migration">
+              <h4>Migration</h4>
+            </div>
+            <div>
+              <h3 class="list-heading">Migration</h3>
+              <ul>
+                <li>Transfer your website to its hosting environment, configuring domain settings and databases to make it accessible to users. </li>
+                <li>Experience a smooth and secure migration process with DevTroop IT Services, where your website's transition challenges become a pathway to enhanced performance and reliability.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+          <!-- Testing -->
+        <div class="col-md-12 mb-5 mt-5">
+          <div class="d-flex align-items-center">
+            <div class="round-image text-center bg-pink me-4">
+              <img src="../assets/img/research.png" class="" alt="Testing">
+              <h4>Testing</h4>
+            </div>
+            <div>
+              <h3 class="list-heading">Testing</h3>
+              <ul>
+                <li>Rigorously test your website for functionality, performance, and security, fixing any issues or bugs before launch.</li>
+                <li>In the dynamic digital environment, we understand the challenge of maintaining the functionality, security, and compatibility of your website.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+          <!-- Launch -->
+        <div class="col-md-12 mb-5 mt-5">
+          <div class="d-flex align-items-center">
+            <div class="round-imagelast text-center bg-purple me-4">
+              <img src="../assets/img/research.png" class="" alt="Launch">
+              <h4>Launch</h4>
+            </div>
+            <div>
+              <h3 class="list-heading">Launch</h3>
+              <ul>
+                <li>Once testing is complete and you're satisfied with the results, make your website live for the world to see, and start marketing it to your target audience.</li>
+                <li>Experience the thrill of a seamless website launch with our IT experts, where challenges transform into achievements and your online presence is poised for success.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <div class="d-grid gap-2 d-sm-flex justify-content-center mb-5 mt-4">
+    <button type="button" class="btn btn-secondary btn-lg px-4" (click)="Enquirymodal()">
+      Call to Action
+    </button>
+  </div>

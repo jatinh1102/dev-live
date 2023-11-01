@@ -1,0 +1,27 @@
+<div class="tab-content" id="v-pills-tabContent">
+    <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab"
+        tabindex="0">
+        <div class="position-box" *ngFor="let items of careers_info">
+            <div class="Category-list">
+                <h3> {{items.requriments}} - {{items.position}} <span style="font-weight: normal;">Positions</span>
+                </h3>
+                <ul class="opning-wrapper">
+                    <li>
+                        <strong>Exp.:</strong> <span>{{items.Exp}}</span>
+                    </li>
+                    <li>
+                        <strong>Job Type :</strong> <span>{{items.Job_Type}}</span>
+                    </li>
+                    <li>
+                        <strong>Location :</strong> <span>{{items.Location}}</span>
+                    </li>
+                </ul>
+                <hr class="w-100">
+                <p class="box_textcontent" *ngFor="let Description of items.Description">{{Description}}</p>
+                <!-- <p class="box_textcontent">{{items.content}}</p> -->
+                <a routerLink="/careers-details" routerLinkActive="active" ariaCurrentWhenActive="page"
+                    class="btn btn-primary" (click)="careers_details(items)">Read More</a>
+            </div>
+        </div>
+    </div>
+</div>

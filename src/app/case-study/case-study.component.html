@@ -1,0 +1,181 @@
+
+
+  <section class="hero-bg" style="background-image: url('../assets/img/white_banner_bg.png');">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-lg-7 col-md-12">
+          <h1 class="banner-heading mt-4">Case Studies</h1>
+          <p class="banner-text">Real-World Success Stories: Explore Our Case Studies.</p>
+        </div>
+        <div class="col-lg-5 col-md-6">
+          <img src="../assets/img/Banner-img/Case-study-Banner.png" alt="banner" class="banner-1">
+        </div>
+      </div>
+    </div>
+  </section>
+  <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb" class="container">
+    <ol class="breadcrumb">
+      <li class="breadcrumb-item"><a routerLink="/home" routerLinkActive="active">Home</a></li>
+      <li class="breadcrumb-item active" aria-current="page">Case Studies</li>
+    </ol>
+  </nav>
+  <section class="Case-Studies our-technologies mt-4">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12 mb-5">
+          <div class="row">
+            <div class="">
+              <div>
+                <div class="nav nav-tabs mb-5 border-0 our-technology-tabs justify-content-around" id="nav-tab"
+                  role="tablist">
+                  <button class="nav-link active" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home"
+                    type="button" role="tab" aria-controls="nav-home" aria-selected="true">Show All</button>
+                  <button class="nav-link" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile"
+                    type="button" role="tab" aria-controls="nav-profile" aria-selected="false">Website</button>
+                  <button class="nav-link" id="nav-Management-tab" data-bs-toggle="tab" data-bs-target="#nav-Management"
+                    type="button" role="tab" aria-controls="nav-Management" aria-selected="false">Mobile App</button>
+                  <button class="nav-link" id="nav-Code-Management-tab" data-bs-toggle="tab"
+                    data-bs-target="#nav-Code-Management" type="button" role="tab" aria-controls="nav-Code-Management"
+                    aria-selected="false">E-Commerce</button>
+                  <button class="nav-link" id="nav-Testing-tab" data-bs-toggle="tab" data-bs-target="#nav-Testing"
+                    type="button" role="tab" aria-controls="nav-Testing" aria-selected="false">Logo</button>
+                  <button class="nav-link" id="nav-Platforms-tab" data-bs-toggle="tab" data-bs-target="#nav-Platforms"
+                    type="button" role="tab" aria-controls="nav-Platforms" aria-selected="false">Social Media</button>
+                </div>
+              </div>
+              <div class="tab-content" id="nav-tabContent">
+                <div class="tab-pane fade active show" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
+                  <div class="row">
+                    <div class="col-lg-4 col-md-6 mb-4" *ngFor="let items of case_data">
+                      <a routerLink="/case-study-explore" routerLinkActive="active"
+                        class="card text-center text-decoration-none" (click)="case_study(items.title)">
+                        <img src={{items.img}} class="card-img-top" alt="TransitFare">
+                        <div class="card-body">
+                          <h5 class="card-title">{{items.title}}</h5>
+                          <p class="card-text">{{items.content}}</p>
+                          <span class="badge text-bg-primary mx-1">{{case_course.Edev}}</span>
+                          <span class="badge text-bg-secondary mx-1">{{case_course.UI}}</span>
+                          <span class="badge text-bg-success mx-1">{{case_course.AppDev}}</span>
+                          <span class="badge text-bg-danger mx-1">{{case_course.AngularDev}}</span>
+                          <span class="badge text-bg-warning mx-1">{{case_course.Grapic}}</span>
+                          <span class="badge text-bg-info mx-1">{{case_course.DB}}</span>
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
+                  <div class="row">
+                    <div class="col-lg-4 col-md-6 mb-4" *ngFor="let items of case_data">
+                      <a href="Case-Studies.html" class="card text-center text-decoration-none">
+                        <img src={{items.img}} class="card-img-top" alt="TransitFare">
+                        <div class="card-body">
+                          <h5 class="card-title">{{items.title}}</h5>
+                          <p class="card-text">{{items.content}}</p>
+                          <span class="badge text-bg-primary mx-1">{{case_course.Edev}}</span>
+                          <span class="badge text-bg-secondary mx-1">{{case_course.UI}}</span>
+                          <span class="badge text-bg-success mx-1">{{case_course.AppDev}}</span>
+                          <span class="badge text-bg-danger mx-1">{{case_course.AngularDev}}</span>
+                          <span class="badge text-bg-warning mx-1">{{case_course.Grapic}}</span>
+                          <span class="badge text-bg-info mx-1">{{case_course.DB}}</span>
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="tab-pane fade" id="nav-Management" role="tabpanel" aria-labelledby="nav-Management-tab">
+                  <div class="row">
+                    <div class="col-lg-4 col-md-6 mb-4" *ngFor="let items of case_data">
+                      <a href="Case-Studies.html" class="card text-center text-decoration-none">
+                        <img src={{items.img}} class="card-img-top" alt="TransitFare">
+                        <div class="card-body">
+                          <h5 class="card-title">{{items.title}}</h5>
+                          <p class="card-text">{{items.content}}</p>
+                          <span class="badge text-bg-primary mx-1">{{case_course.Edev}}</span>
+                          <span class="badge text-bg-secondary mx-1">{{case_course.UI}}</span>
+                          <span class="badge text-bg-success mx-1">{{case_course.AppDev}}</span>
+                          <span class="badge text-bg-danger mx-1">{{case_course.AngularDev}}</span>
+                          <span class="badge text-bg-warning mx-1">{{case_course.Grapic}}</span>
+                          <span class="badge text-bg-info mx-1">{{case_course.DB}}</span>
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="tab-pane fade" id="nav-Code-Management" role="tabpanel">
+                  <div class="row">
+                    <div class="col-lg-4 col-md-6 mb-4" *ngFor="let items of case_data">
+                      <a href="Case-Studies.html" class="card text-center text-decoration-none">
+                        <img src={{items.img}} class="card-img-top" alt="TransitFare">
+                        <div class="card-body">
+                          <h5 class="card-title">{{items.title}}</h5>
+                          <p class="card-text">{{items.content}}</p>
+                          <span class="badge text-bg-primary mx-1">{{case_course.Edev}}</span>
+                          <span class="badge text-bg-secondary mx-1">{{case_course.UI}}</span>
+                          <span class="badge text-bg-success mx-1">{{case_course.AppDev}}</span>
+                          <span class="badge text-bg-danger mx-1">{{case_course.AngularDev}}</span>
+                          <span class="badge text-bg-warning mx-1">{{case_course.Grapic}}</span>
+                          <span class="badge text-bg-info mx-1">{{case_course.DB}}</span>
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="tab-pane fade" id="nav-Testing" role="tabpanel" aria-labelledby="nav-Testing-tab">
+                  <div class="row">
+                    <div class="col-lg-4 col-md-6 mb-4" *ngFor="let items of case_data">
+                      <a href="Case-Studies.html" class="card text-center text-decoration-none">
+                        <img src={{items.img}} class="card-img-top" alt="TransitFare">
+                        <div class="card-body">
+                          <h5 class="card-title">{{items.title}}</h5>
+                          <p class="card-text">{{items.content}}</p>
+                          <span class="badge text-bg-primary mx-1">{{case_course.Edev}}</span>
+                          <span class="badge text-bg-secondary mx-1">{{case_course.UI}}</span>
+                          <span class="badge text-bg-success mx-1">{{case_course.AppDev}}</span>
+                          <span class="badge text-bg-danger mx-1">{{case_course.AngularDev}}</span>
+                          <span class="badge text-bg-warning mx-1">{{case_course.Grapic}}</span>
+                          <span class="badge text-bg-info mx-1">{{case_course.DB}}</span>
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="tab-pane fade" id="nav-Platforms" role="tabpanel" aria-labelledby="nav-Platforms-tab">
+                  <div class="row">
+                    <div class="col-lg-4 col-md-6 mb-4" *ngFor="let items of case_data">
+                      <a href="Case-Studies.html" class="card text-center text-decoration-none">
+                        <img src={{items.img}} class="card-img-top" alt="TransitFare">
+                        <div class="card-body">
+                          <h5 class="card-title">{{items.title}}</h5>
+                          <p class="card-text">{{items.content}}</p>
+                          <span class="badge text-bg-primary mx-1">{{case_course.Edev}}</span>
+                          <span class="badge text-bg-secondary mx-1">{{case_course.UI}}</span>
+                          <span class="badge text-bg-success mx-1">{{case_course.AppDev}}</span>
+                          <span class="badge text-bg-danger mx-1">{{case_course.AngularDev}}</span>
+                          <span class="badge text-bg-warning mx-1">{{case_course.Grapic}}</span>
+                          <span class="badge text-bg-info mx-1">{{case_course.DB}}</span>
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <div class="d-flex justify-content-center">
+    <nav aria-label="Page navigation example">
+      <ul class="pagination">
+        <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+        <li class="page-item"><a class="page-link" href="#">1</a></li>
+        <li class="page-item"><a class="page-link" href="#">2</a></li>
+        <li class="page-item"><a class="page-link" href="#">...</a></li>
+        <li class="page-item"><a class="page-link" href="#">7</a></li>
+        <li class="page-item"><a class="page-link" href="#">8</a></li>
+        <li class="page-item"><a class="page-link" href="#">Next</a></li>
+      </ul>
+    </nav>
+  </div>

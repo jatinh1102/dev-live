@@ -1,0 +1,32 @@
+.nav-link.active {
+    border-left: 3px solid #b7b7b7;
+    border-bottom: none;
+    background: #00537D;
+    color: white;
+}
+.flex-left {
+    position: sticky;
+    top: 20px;
+}
+.privacy-policy .nav li a {
+    padding: 10px 19px;
+}
+
+.privacy-policy h1 {
+    margin: 25px 0px -95px 0px;
+}
+
+.privacy-policy .nav {
+    display: flex;
+    justify-content: left;
+    list-style: none;
+    margin: 24% 0% 0 -42px;
+}
+
+.privacy-policy .nav-heading {
+    padding: 10px 0px;
+}
+
+.flex-right::-webkit-scrollbar {
+    display: none;
+}

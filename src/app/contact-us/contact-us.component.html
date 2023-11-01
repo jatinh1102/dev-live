@@ -1,0 +1,171 @@
+
+
+  <section class="hero-bg" style="background-image: url('../assets/img/white_banner_bg.png');">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-lg-8 col-md-12">
+          <h1 class="banner-heading">Contact Us</h1>
+          <p class="banner-text">Get in Touch – We're Here to Help!</p>
+        </div>
+        <div class="col-lg-4 col-md-6">
+          <img src="../assets/img/Banner-img/Contact-Us-Banner.png" alt="banner" class="banner-1">
+        </div>
+      </div>
+    </div>
+  </section>
+  <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb" class="container">
+    <ol class="breadcrumb">
+      <li class="breadcrumb-item"><a routerLink="/home" routerLinkActive="active">Home</a></li>
+      <li class="breadcrumb-item active" aria-current="page">Contact Us</li>
+    </ol>
+  </nav>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12 service-explor-heading">
+        <h1 class="heading">Contact Us</h1>
+        <div class="d-flex align-items-center justify-content-center mb-2">
+          <hr><span class="iconify me-4 ms-4 square" data-icon="ic:outline-square" data-width="20" data-height="20"
+            data-rotate="48deg"></span>
+          <hr>
+        </div>
+        <h4 class="subheading text-center">
+          Thank you for your interest in our services. We are dedicated to providing top-quality software and
+          technology solutions to help our clients achieve their business goals.
+        </h4>
+      </div>
+    </div>
+  </div>
+  <div class="container mt-4 mb-4">
+    <div class="row justify-content-center">
+      <div class="col-lg-8 col-md-12 mb-5">
+        <div class="form-filed w-100" style="background-image: url('../assets/img/white_banner_bg.png');">
+          <h1 class="text-center">Let’s Talk About Your Project</h1>
+          <form class="row g-3 needs-validation mt-2" [formGroup]="contact">
+            <div class="col-md-6">
+              <input type="text" inputmode="text" class="form-control" id="validationCustom01" placeholder="First Name"
+                formControlName="first_name">
+              <div *ngIf="!contact.controls.first_name?.valid && (contact.controls.first_name?.dirty
+                ||contact.controls.first_name?.touched)" style="color: red; font-size: 15px;">
+                Please Enter Your First Name
+              </div>
+            </div>
+            <div class="col-md-6">
+              <input type="text" inputmode="text" class="form-control" id="validationCustom01" placeholder="Last Name"
+                formControlName="last_name">
+              <div *ngIf="!contact.controls.last_name?.valid && (contact.controls.last_name?.dirty
+                ||contact.controls.last_name?.touched)" style="color: red; font-size: 15px;">
+                Please Enter Your Last Name
+              </div>
+            </div>
+            <div class="col-md-6">
+              <input type="text" inputmode="email" class="form-control" id="validationCustom02" placeholder="Email" formControlName="Email">
+              <div *ngIf="!contact.controls.Email?.valid && (contact.controls.Email?.dirty
+                ||contact.controls.Email?.touched)" style="color: red; font-size: 15px;">
+                Please Enter Your valid Email
+              </div>
+            </div>
+            <div class="col-md-6">
+              <input type="text" inputmode="tel" class="form-control" id="validationCustom02" placeholder="Mobile No."
+                formControlName="mobile_no">
+              <div *ngIf="!contact.controls.mobile_no?.valid && (contact.controls.mobile_no?.dirty
+                ||contact.controls.mobile_no?.touched)" style="color: red; font-size: 15px;">
+                Please Enter Your valid mobile_no
+              </div>
+            </div>
+            <div class="col-md-6">
+              <input type="text" inputmode="text" class="form-control" id="validationCustomUsername" aria-describedby="inputGroupPrepend"
+                placeholder="Company" formControlName="company_name">
+              <div *ngIf="!contact.controls.company_name?.valid && (contact.controls.company_name?.dirty
+                    ||contact.controls.company_name?.touched)" style="color: red; font-size: 15px;">
+                Please Enter Your company name
+              </div>
+            </div>
+            <div class="col-md-6">
+              <input type="text" inputmode="url" class="form-control" id="validationCustomUsername" aria-describedby="inputGroupPrepend"
+                placeholder="Website" formControlName="website">
+              <div *ngIf="!contact.controls.website?.valid && (contact.controls.website?.dirty
+                    ||contact.controls.website?.touched)" style="color: red; font-size: 15px;">
+                Please Enter Your website info
+              </div>
+            </div>
+            <div class="col-md-6">
+              <input type="text" inputmode="text" class="form-control" id="validationCustom03" placeholder="When do you want to start?"
+                formControlName="project_start">
+              <div *ngIf="!contact.controls.project_start?.valid && (contact.controls.project_start?.dirty
+                  ||contact.controls.project_start?.touched)" style="color: red; font-size: 15px;">
+                Please Enter start time
+              </div>
+            </div>
+            <div class="col-md-6">
+              <input type="text" inputmode="text" class="form-control" id="validationCustom06" placeholder="What is your Budget?"
+                formControlName="project_budget">
+              <div *ngIf="!contact.controls.project_budget?.valid && (contact.controls.project_budget?.dirty
+                ||contact.controls.project_budget?.touched)" style="color: red; font-size: 15px;">
+                Please Enter Your Project Budget
+              </div>
+            </div>
+            <div class="col-12">
+              <div class="mb-3">
+                <textarea class="form-control" inputmode="text" id="exampleFormControlTextarea1" rows="3" placeholder="Your message"
+                  formControlName="message"></textarea>
+              </div>
+            </div>
+            <div class="col-12">
+              <button class="btn btn-primary" (click)="contact_us(contact.value)" [disabled]="!contact.valid">Send
+                Message</button>
+            </div>
+          </form>
+        </div>
+      </div>
+      <div class="col-lg-10 col-md-12">
+        <div class="row">
+          <div class="col-md-6 contact-us-map">
+            <div class="card text-center">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3692.1197613042955!2d70.7745372857833!3d22.273452791556572!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3959ca46f5c40c5f%3A0xeb865115b5c3753a!2sTWINSTAR!5e0!3m2!1sen!2sin!4v1681391960057!5m2!1sen!2sin"
+                width="100%" height="263" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+              <div class="card-body">
+                <h1 class="card-title">Asia</h1>
+                <h2>DevTroop LLP.</h2>
+                <h3><span class="iconify me-2" data-icon="ph:map-pin" style="color: black;" data-width="24"
+                    data-height="24"></span>305, 3rd Flore, South Block<br>
+                  Twinstar, Nr. Balaji Hall, <br>
+                  Rajkot - 360005 </h3>
+                <a href="tel:+911234567890"><span class="iconify me-2" data-icon="bx:phone-call" style="color: black;"
+                    data-width="24" data-height="24"></span>+91 123456780</a>
+                <a href="mailto:info@ranpariyalab.com"><span class="iconify me-2" data-icon="ion:mail-open-outline"
+                    style="color: black;" data-width="24" data-height="24"></span>info@ranpariyalab.com</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 contact-us-map">
+            <div class="card text-center">
+              <iframe
+                src="https://www.google.com/maps/embed?zoom=15&pb=!1m17!1m12!1m3!1d2379.151191824563!2d-105.76769462298594!3d53.39423527113877!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zNTPCsDIzJzM5LjIiTiAxMDXCsDQ1JzU0LjQiVw!5e0!3m2!1sen!2sin!4v1684495212720!5m2!1sen!2sin"
+                width="100%" height="263" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+              <div class="card-body">
+                <h1 class="card-title">North America</h1>
+                <h2>DevTroop LLC.</h2>
+                <h3><span class="iconify me-2" data-icon="ph:map-pin" style="color: black;" data-width="24"
+                    data-height="24"></span>1 St Clair Ave E #1001,<br>
+                  Toronto, ON M4T 2V7, <br>
+                  Canada</h3>
+                <a href="tel:+911234567890"><span class="iconify me-2" data-icon="bx:phone-call" style="color: black;"
+                    data-width="24" data-height="24"></span>+91 123456780</a>
+                <a href="mailto:example@mail.com"><span class="iconify me-2" data-icon="ion:mail-open-outline"
+                    style="color: black;" data-width="24" data-height="24"></span>info@devtroop.com</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <h1 class="text-center social-text mb-4">Connect Socials Network</h1>
+      <div class="d-flex align-items-center justify-content-around social-icon-contact mt-4 mb-4">
+        <img src="../assets/img/twitter.png" alt="image">
+        <img src="../assets/img/linkedin.png" alt="image">
+        <img src="../assets/img/skype.png" alt="image">
+      </div>
+    </div>
+  </div>

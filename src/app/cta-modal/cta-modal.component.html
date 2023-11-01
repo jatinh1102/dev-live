@@ -1,0 +1,58 @@
+<div class="modal-header">
+    <h1 class="modal-title" id="exampleModalLabel">CALL TO ACTION</h1>
+    <button type="button" class="btn-close" aria-label="Close" (click)="activeModal.dismiss()"></button>
+</div>
+<div class="modal-body">
+    <form [formGroup]="myForm" method="post">
+        <div class="row">
+            <div class="col-md-6 mb-3">
+                <label for="validationCustom-01" class="form-label">First Name<span class="required">*</span></label>
+                <input type="text" inputmode="text" class="form-control" id="validationCustom-01" value="" placeholder="First Name"
+                    formControlName="first_name">
+                <div *ngIf="!myForm.controls.first_name?.valid && (myForm.controls.first_name?.dirty
+                ||myForm.controls.first_name?.touched)" style="color: red; font-size: 15px;">
+                    Please Enter Your First Name
+                </div>
+            </div>
+            <div class="col-md-6 mb-3">
+                <label for="validationCustom-02" class="form-label">Last Name<span class="required">*</span></label>
+                <input type="text" inputmode="text" class="form-control" id="validationCustom-02" value="" placeholder="Last Name"
+                    formControlName="last_name">
+                <div *ngIf="!myForm.controls.last_name?.valid && (myForm.controls.last_name?.dirty
+                ||myForm.controls.last_name?.touched)" style="color: red; font-size: 15px;">
+                    Please Enter Your Last Name
+                </div>
+            </div>
+            <div class="col-md-6 mb-3">
+                <label for="validationCustom-03" class="form-label">Email<span class="required">*</span></label>
+                <input type="email" inputmode="email" class="form-control" id="validationCustom-03" value=""
+                    placeholder="example@mail.com" formControlName="Email">
+                <div *ngIf="!myForm.controls.Email?.valid && (myForm.controls.Email?.dirty
+                ||myForm.controls.Email?.touched)" style="color: red; font-size: 15px;">
+                    Please Enter Your E-Mail Address
+                </div>
+            </div>
+            <div class="col-md-6 mb-3">
+                <label for="validationCustom-04" class="form-label">Phone Number<span class="required">*</span></label>
+                <input type="text" inputmode="tel" class="form-control" id="validationCustom-04" value="" placeholder="91 12345 67890"
+                    formControlName="phone_no">
+                <div *ngIf="!myForm.controls.phone_no?.valid && (myForm.controls.phone_no?.dirty
+                ||myForm.controls.phone_no?.touched)" style="color: red; font-size: 15px;">
+                    Please Enter Your Phone Number
+                </div>
+            </div>
+            <div class="col-12">
+                <div class="mb-3">
+                    <label inputmode="text" for="exampleFormControlTextarea-01" class="form-label text-capitalize">how we can
+                        help</label>
+                    <textarea class="form-control" id="exampleFormControlTextarea-01" placeholder="Type hear..."
+                        rows="3" formControlName="message"></textarea>
+                </div>
+            </div>
+        </div>
+    </form>
+</div>
+<div class="modal-footer">
+    <button type="submit" class="btn btn-header" (click)="Enquiryclose(myForm.value)" [disabled]="!myForm.valid">Send
+        Enquiry</button>
+</div>

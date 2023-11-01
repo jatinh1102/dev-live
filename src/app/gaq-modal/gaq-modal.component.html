@@ -1,0 +1,60 @@
+<div class="modal-header">
+  <h1 class="modal-title fs-5" id="exampleModalLabel">Get A Quote</h1>
+  <button type="button" class="btn-close" (click)="activemodal.dismiss()" aria-label="Close"></button>
+</div>
+<div class="modal-body">
+  <div class="form-filed w-100 border-0">
+    <h1 class="text-center  mb-3">Let’s Talk About Your Project</h1>
+    <form class="row g-3 needs-validation" [formGroup]="Get_Qute">
+      <div class="col-md-12">
+        <input type="text" inputmode="text" class="form-control" id="validationCustom01" placeholder="Full Name"
+          formControlName="full_name">
+        <div *ngIf="!Get_Qute.controls.full_name?.valid && (Get_Qute.controls.full_name?.dirty
+              ||Get_Qute.controls.full_name?.touched)" style="color: red; font-size: 15px;">
+          Please Enter Your Name
+        </div>
+      </div>
+      <div class="col-md-12">
+        <input type="email" inputmode="email" class="form-control" id="validationCustom02" placeholder="Email" formControlName="Email">
+        <div *ngIf="!Get_Qute.controls.Email?.valid && (Get_Qute.controls.Email?.dirty
+              ||Get_Qute.controls.Email?.touched)" style="color: red; font-size: 15px;">
+          Please Enter Your valid Email
+        </div>
+      </div>
+      <div class="col-md-12">
+        <input type="text" inputmode="text" class="form-control" id="validationCustomUsername" aria-describedby="inputGroupPrepend"
+          placeholder="Company" formControlName="Company_name">
+        <div *ngIf="!Get_Qute.controls.Company_name?.valid && (Get_Qute.controls.Company_name?.dirty
+              ||Get_Qute.controls.Company_name?.touched)" style="color: red; font-size: 15px;">
+          Please Enter Your Company Name
+        </div>
+      </div>
+      <div class="col-md-6">
+        <input type="text" inputmode="text" class="form-control" id="validationCustom03" placeholder="When do you want to start?"
+          formControlName="project_start">
+        <div *ngIf="!Get_Qute.controls.project_start?.valid && (Get_Qute.controls.project_start?.dirty
+              ||Get_Qute.controls.project_start?.touched)" style="color: red; font-size: 15px;">
+          Please Enter Your start time.
+        </div>
+      </div>
+      <div class="col-md-6">
+        <input type="text" inputmode="text" class="form-control" id="validationCustom06" placeholder="What is your Budget?"
+          formControlName="project_budget">
+        <div *ngIf="!Get_Qute.controls.project_budget?.valid && (Get_Qute.controls.project_budget?.dirty
+              ||Get_Qute.controls.project_budget?.touched)" style="color: red; font-size: 15px;">
+          Please Enter Your Project Budget
+        </div>
+      </div>
+      <div class="col-12">
+        <div class="mb-3">
+          <textarea class="form-control" inputmode="text" id="exampleFormControlTextarea1" rows="3" placeholder="Describe"
+            formControlName="message"></textarea>
+        </div>
+      </div>
+    </form>
+  </div>
+</div>
+<div class="modal-footer">
+  <button type="button" class="btn btn-primary" (click)="send_Qute(Get_Qute.value)" [disabled]="!Get_Qute.valid">Send
+    Message</button>
+</div>

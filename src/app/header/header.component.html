@@ -1,0 +1,41 @@
+<nav ngxNavbarDynamicExpand id="navbar-top" class="navbar navbar-expand-lg mb-3 fixed-top" appNavBgChange>
+  <div class="container">
+    <a class="navbar-brand" routerLink="/home">
+      <img src="../assets/img/Header-Logo.png" alt="Ranpariya Lab" width="217" height="67">
+    </a>
+    <button class="navbar-toggler" type="button" (click)="collapse.toggle()" aria-expanded="false"
+      aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <ngx-navbar-collapse class="justify-content-end" #collapse="ngxNavbarCollapse">
+      <ul class="navbar-nav mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/home" routerLinkActive="active" ariaCurrentWhenActive="page"
+            (click)="collapse.toggle()">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/about" routerLinkActive="active" ariaCurrentWhenActive="page"
+            (click)="collapse.toggle()">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/services" routerLinkActive="active" ariaCurrentWhenActive="page"
+            (click)="collapse.toggle()">Services</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/careers" routerLinkActive="active" ariaCurrentWhenActive="page"
+            (click)="collapse.toggle()">Careers
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/contact-us" routerLinkActive="active" ariaCurrentWhenActive="page"
+            (click)="collapse.toggle()">Contact
+            Us</a>
+        </li>
+        <li class="nav-item ms-4">
+          <a class="nav-link btn btn-primary" (click)="GetQute()">Get A
+            Quote</a>
+        </li>
+      </ul>
+    </ngx-navbar-collapse>
+  </div>
+</nav>

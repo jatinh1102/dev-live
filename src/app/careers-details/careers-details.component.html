@@ -1,0 +1,186 @@
+
+  <section class="hero-bg" style="background-image: url('../assets/img/white_banner_bg.png');">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-lg-8 col-md-12">
+          <h1 class="banner-heading">{{careers_details.requriments}}</h1>
+          <p class="banner-text">Unlock Your Potential: Explore Career Opportunities and Benefits.</p>
+        </div>
+        <div class="col-lg-4 col-md-6">
+          <img src="../assets/img/Banner-img/Android-Developer-Banner.png" alt="banner" class="banner-1">
+        </div>
+      </div>
+    </div>
+  </section>
+  <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb" class="container">
+    <ol class="breadcrumb">
+      <li class="breadcrumb-item"><a routerLink="/home" routerLinkActive="active">Home</a></li>
+      <li class="breadcrumb-item"><a routerLink="/careers" routerLinkActive="active">Careers</a></li>
+      <li class="breadcrumb-item active" aria-current="page">{{careers_details.requriments}}</li>
+    </ol>
+  </nav>
+  <section class="career-Details">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <div class="row">
+            <div class="col-lg-3 col-md-6 col-6">
+              <div class="box text-center mb-4">
+                <div>
+                  <img src="../assets/img/wired-flat-56-document.gif  " class="card-img-top" alt="Experience">
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title">{{careers_details.Exp}}</h5>
+                  <p class="card-text">Total Experience</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-6">
+              <div class="box text-center mb-4">
+                <div>
+                  <img src="../assets/img/wired-flat-45-clock-time.gif" class="card-img-top" alt="JobType">
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title">{{careers_details.Job_Type}}</h5>
+                  <p class="card-text">Job Type</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-6">
+              <div class="box text-center mb-4">
+                <div>
+                  <img src="../assets/img/wired-flat-268-avatar-man.gif" class="card-img-top" alt="Position">
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title">{{careers_details.position}}</h5>
+                  <p class="card-text">Position</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-6">
+              <div class="box text-center mb-4">
+                <div>
+                  <img src="../assets/img/wired-flat-18-location-pin.gif" class="card-img-top" alt="Location">
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title">{{careers_details.Location}}</h5>
+                  <p class="card-text">Location</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-12">
+              <h3 class="list-heading">Job Description :</h3>
+                <ul>
+                  <li *ngFor="let Description of careers_details.Description">{{Description}}</li>
+                </ul>
+              <h3 class="list-heading">Skills :</h3>
+                <ul>
+                  <li *ngFor="let skill of careers_details.skill">{{skill}}</li>
+                </ul>
+              <h3 class="list-heading">Job Responsibility :</h3>
+                <ul>
+                  <li *ngFor="let Responsibility of careers_details.Responsibility">{{Responsibility}}</li>
+                </ul>
+              <h3 class="list-heading">How to Apply :</h3>
+                <ul>
+                  <li>
+                    If you're a passionate and skilled Android Developer looking to join a dynamic team and work on exciting projects, we'd love to hear from you. Please submit your resume, cover letter, and a link to your portfolio or GitHub repository to Krishnashukla.rtdl@gmail.com.
+                  </li>
+                </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="form-filed w-100" style="background-image: url('../assets/img/white_banner_bg.png');">
+            <h1 class="text-center">Apply Now</h1>
+            <form class="row g-3 needs-validation" [formGroup]="career" method="post" enctype="multipart/form-data"
+              (ngSubmit)="career_info()">
+              <div class="col-md-12">
+                <label for="validationCustom01" class="form-label">Full Name <span class="required">*</span></label>
+                <input type="text" inputmode="text" class="form-control" id="validationCustom01" value="" formControlName="full_name">
+                <div *ngIf="!career.controls.full_name?.valid && (career.controls.full_name?.dirty
+                  ||career.controls.full_name?.touched)" style="color: red; font-size: 15px;">
+                  Please Enter Your Full Name
+                </div>
+              </div>
+              <div class="col-md-6">
+                <label for="validationCustom02" class="form-label">Email <span class="required">*</span></label>
+                <input type="text" inputmode="email" class="form-control" id="validationCustom02" value="" formControlName="Email">
+                <div *ngIf="!career.controls.Email?.valid && (career.controls.Email?.dirty
+                  ||career.controls.Email?.touched)" style="color: red; font-size: 15px;">
+                  Please Enter Your E mail Address
+                </div>
+              </div>
+              <div class="col-md-6">
+                <label for="validationCustomUsername" class="form-label">Phone <span class="required">*</span></label>
+                <input type="text" inputmode="tel" class="form-control" id="validationCustomUsername" aria-describedby="inputGroupPrepend"
+                  formControlName="phone_no">
+                <div *ngIf="!career.controls.phone_no?.valid && (career.controls.phone_no?.dirty
+                    ||career.controls.phone_no?.touched)" style="color: red; font-size: 15px;">
+                  Please Fill your Mobile Number.
+                </div>
+              </div>
+              <div class="col-md-6">
+                <label for="validationCustom03" class="form-label">Current CTC <span class="required">*</span></label>
+                <input type="text" inputmode="numeric" class="form-control" id="validationCustom03" formControlName="Current_CTC">
+                <div *ngIf="!career.controls.Current_CTC?.valid && (career.controls.Current_CTC?.dirty
+                  ||career.controls.Current_CTC?.touched)" style="color: red; font-size: 15px;">
+                  Please fill your Current CTC.
+                </div>
+              </div>
+              <div class="col-md-6">
+                <label for="validationCustom06" class="form-label">Expected CTC <span class="required">*</span></label>
+                <input type="text" inputmode="numeric" class="form-control" id="validationCustom06" formControlName="Expected_CTC">
+                <div *ngIf="!career.controls.Expected_CTC?.valid && (career.controls.Expected_CTC?.dirty
+                  ||career.controls.Expected_CTC?.touched)" style="color: red; font-size: 15px;">
+                  Please fill your Expected CTC.
+                </div>
+              </div>
+              <div class="col-md-6">
+                <label for="validationCustom07" class="form-label">Current Employee <span
+                    class="required">*</span></label>
+                <input type="text" inputmode="numeric" class="form-control" id="validationCustom07" formControlName="Employee">
+                <div *ngIf="!career.controls.Employee?.valid && (career.controls.Employee?.dirty
+                  ||career.controls.Employee?.touched)" style="color: red; font-size: 15px;">
+                  Please fill your Current Employee.
+                </div>
+              </div>
+              <div class="col-md-6">
+                <label for="validationCustom04" class="form-label">Experiance <span class="required">*</span></label>
+                <select class="form-select" id="validationCustom04" formControlName="Experience">
+                  <option selected disabled value="">Choose...</option>
+                  <option value="Fresher">Fresher</option>
+                  <option value="1+years">1 + years</option>
+                  <option value="3-to-5-years">3 to 5 years</option>
+                  <option value="6+years">6 + years</option>
+                </select>
+                <div *ngIf="!career.controls.Experience?.valid && (career.controls.Experience?.dirty
+                  ||career.controls.Experience?.touched)" style="color: red; font-size: 15px;">
+                  Please select a valid Experiance.
+                </div>
+              </div>
+              <div class="col-md-12">
+                <div class="mb-3">
+                  <label for="validationCustom08" class="form-label">Upload Resume <span class="required">*</span></label>
+                  <input type="file" class="form-control" aria-label="file example" id="validationCustom08"
+                    formControlName="image" (change)="onFileChange($event)">
+                  <div *ngIf="!career.controls.image?.valid && (career.controls.image?.dirty
+                    ||career.controls.image?.touched)" style="color: red; font-size: 15px;">Please Upload valid Image </div>
+                </div>
+              </div>
+              <div class="col-12">
+                <div class="mb-3">
+                  <label for="exampleFormControlTextarea1" inputmode="text" class="form-label">Your Message</label>
+                  <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"
+                    formControlName="message"></textarea>
+                </div>
+              </div>
+              <div class="col-12 text-center">
+                <button class="btn-apply text-uppercase" type="submit" [disabled]="!career.valid">Apply</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>

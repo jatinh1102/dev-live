@@ -1,0 +1,13 @@
+
+    .accordion-button:focus {
+    outline: none;
+    box-shadow: none;
+  }
+
+  .accordion-font {
+    font-family: var(--bs-btn-font-family-Poppins);
+    width: 100%;
+    padding: 5px 26px 5px 0px;
+    cursor: pointer;
+    font-size: 18px;
+  }

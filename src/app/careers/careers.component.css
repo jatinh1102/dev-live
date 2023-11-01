@@ -1,0 +1,15 @@
+.hide-section {
+    display: block;
+}
+
+@media (max-width: 991px) {
+    .hide-section {
+        display: none;
+    }
+}
+.accordion-button{
+ background-color: #e7f1ff;
+}
+.accordion-button:focus{
+ box-shadow: none;
+}
