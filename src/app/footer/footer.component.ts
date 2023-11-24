@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
-import { CtaModalComponent } from '../cta-modal/cta-modal.component'
+import { CtaModalComponent } from '../cta-modal/cta-modal.component';
+import { NgOptimizedImage } from '@angular/common'
+
 
 @Component({
   selector: 'app-footer',

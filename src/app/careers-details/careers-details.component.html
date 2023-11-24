@@ -1,4 +1,13 @@
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="keywords" content="Career at Ranpariya The Development Lab- LLP, Work at Ranpariya The Development Lab- LLP, IT Jobs, Tech Careers, Software Development Careers, IT Careers, Job Openings, Technology Jobs, Software Engineering Jobs, Join Our Team, IT Positions, Job Vacancies, Employment Opportunities,IT Job Listings">
+  <meta name="description" content="Explore this exciting career opportunity at Ranpariya The Developer Lab-LLP. Learn about the role, responsibilities, and qualifications for the Job. Find out why working with us is a rewarding experience and take the first step towards joining our innovative IT team." />
+  <title>Ranpariya The Development Lab-LLP career-Details Page</title>
+</head>
   <section class="hero-bg" style="background-image: url('../assets/img/white_banner_bg.png');">
     <div class="container">
       <div class="row align-items-center">
@@ -97,7 +106,7 @@
               (ngSubmit)="career_info()">
               <div class="col-md-12">
                 <label for="validationCustom01" class="form-label">Full Name <span class="required">*</span></label>
-                <input type="text" inputmode="text" class="form-control" id="validationCustom01" value="" formControlName="full_name">
+                <input type="text" inputmode="text" class="form-control" id="validationCustom01"  formControlName="full_name">
                 <div *ngIf="!career.controls.full_name?.valid && (career.controls.full_name?.dirty
                   ||career.controls.full_name?.touched)" style="color: red; font-size: 15px;">
                   Please Enter Your Full Name
@@ -105,7 +114,7 @@
               </div>
               <div class="col-md-6">
                 <label for="validationCustom02" class="form-label">Email <span class="required">*</span></label>
-                <input type="text" inputmode="email" class="form-control" id="validationCustom02" value="" formControlName="Email">
+                <input type="text" inputmode="email" class="form-control" id="validationCustom02"  formControlName="Email">
                 <div *ngIf="!career.controls.Email?.valid && (career.controls.Email?.dirty
                   ||career.controls.Email?.touched)" style="color: red; font-size: 15px;">
                   Please Enter Your E mail Address
@@ -148,7 +157,7 @@
               <div class="col-md-6">
                 <label for="validationCustom04" class="form-label">Experiance <span class="required">*</span></label>
                 <select class="form-select" id="validationCustom04" formControlName="Experience">
-                  <option selected disabled value="">Choose...</option>
+                  <option selected disabled >Choose...</option>
                   <option value="Fresher">Fresher</option>
                   <option value="1+years">1 + years</option>
                   <option value="3-to-5-years">3 to 5 years</option>
@@ -184,3 +193,4 @@
       </div>
     </div>
   </section>
+</html>
